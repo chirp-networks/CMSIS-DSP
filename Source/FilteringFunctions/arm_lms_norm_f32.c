@@ -160,7 +160,7 @@
 void arm_lms_norm_f32(
   arm_lms_norm_instance_f32 * S,
   const float32_t * pSrc,
-  float32_t * pRef,
+  const float32_t * pRef,
   float32_t * pOut,
   float32_t * pErr,
   uint32_t blockSize)
@@ -348,8 +348,8 @@ void arm_lms_norm_f32(
 #else
 void arm_lms_norm_f32(
         arm_lms_norm_instance_f32 * S,
-  const float32_t * pSrc,
-        float32_t * pRef,
+        const float32_t * pSrc,
+        const float32_t * pRef,
         float32_t * pOut,
         float32_t * pErr,
         uint32_t blockSize)

@@ -64,8 +64,8 @@
 
 void arm_lms_norm_q15(
         arm_lms_norm_instance_q15 * S,
-  const q15_t * pSrc,
-        q15_t * pRef,
+        const q15_t * pSrc,
+        const q15_t * pRef,
         q15_t * pOut,
         q15_t * pErr,
         uint32_t blockSize)
